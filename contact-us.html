@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="website-courses.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <style>
+      body {
+        font-family: "Rethink Sans", sans-serif !important; /* ✅ Force apply */
+        font-style: normal;
+      }
+
+      @keyframes blob {
+        0%,
+        100% {
+          transform: translate(0px, 0px) scale(1);
+        }
+        33% {
+          transform: translate(30px, -50px) scale(1.1);
+        }
+        66% {
+          transform: translate(-20px, 20px) scale(0.9);
+        }
+      }
+
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.3;
+        filter: blur(80px);
+        mix-blend-mode: multiply;
+        animation: blob 7s infinite;
+        width: clamp(100px, 20vw, 300px);
+        height: clamp(100px, 20vw, 300px);
+      }
+
+      .blob.delay-1 {
+        animation-delay: 0s;
+      }
+      .blob.delay-2 {
+        animation-delay: 2s;
+      }
+      .blob.delay-3 {
+        animation-delay: 4s;
+      }
+
+      .form-image {
+        width: 100%;
+        height: auto;
+        max-height: 550px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="position-relative bg-light">
+    <div
+      class="blob delay-1 d-none d-md-block"
+      style="background-color: blue; top: -50px; left: -50px"
+    ></div>
+    <div
+      class="blob delay-2 d-none d-md-block"
+      style="background-color: orange; top: 0; right: 0"
+    ></div>
+
+    <main class="container py-5">
+      <div class="row gx-md-5">
+        <div class="col-12 col-md-5 mb-4 mb-md-0">
+          <p class="h2 fw-semibold">Get In Touch</p>
+          <p class="mt-4 text-secondary">
+            We'd love to hear from you! whether you have questions, need
+            support, or want to learn more about our services. Our team is here
+            to help.
+          </p>
+        </div>
+        <div class="col-12 col-md-3 mb-4 mb-md-0">
+          <div
+            class="d-flex justify-content-center align-items-center rounded-3 bg-primary text-white"
+            style="width: 40px; height: 40px"
+          >
+            <i class="bi bi-geo-alt-fill text-warning"></i>
+          </div>
+          <p class="fw-semibold mt-3">Our address</p>
+          <p class="text-secondary">
+            Suite D9 3rd Floor, Othni Plaza, Wuse, Abuja
+          </p>
+          <p class="text-secondary">
+            94, Ihama Road, Off Adesuwa Road, G.R.A; Benin City
+          </p>
+        </div>
+        <div class="col-12 col-md-3 mb-4 mb-md-0">
+          <div
+            class="d-flex justify-content-center align-items-center rounded-3 bg-primary text-white"
+            style="width: 40px; height: 40px"
+          >
+            <i class="bi bi-telephone-fill text-warning"></i>
+          </div>
+          <p class="fw-semibold mt-3">Our Contact Info</p>
+          <p class="text-secondary">08055205346 09081851043</p>
+          <p class="text-secondary">
+            info@edrictech.com.ng support@edrictech.com.ng
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="container mt-5 p-0 shadow-lg rounded-4 border border-5">
+        <div class="row align-items-start g-0">
+          <div class="col-12 col-md-6 order-md-1">
+            <img
+              src="./assets/edric-tech-woman.jpg"
+              class="rounded-top rounded-md-start rounded-md-0 form-image"
+              alt="face of EdricTech"
+            />
+          </div>
+          <div class="col-12 col-md-6 p-4 p-md-5 order-md-2">
+            <h2 class="mb-4 lh-base">
+              Don't hesitate to connect with us.<br />
+              Say hello....
+            </h2>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Write your message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2"
+              >
+                Send Message
+                <i class="bi bi-send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="" style="margin-top: 100px">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6814153564424!2d5.61932747411384!3d6.305522025659855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3a5abdc1287%3A0x5ba3c9de5054c450!2sEdric%20Tech%20Solution%20Limited!5e0!3m2!1sen!2sng!4v1684634974635!5m2!1sen!2sng"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
