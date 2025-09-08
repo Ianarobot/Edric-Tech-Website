@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Floating Animation -->
+    <!-- Floating Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-14px); }
+  }
+  .floating-img {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<!-- Services Hero Section -->
+<section class="position-relative d-flex align-items-center min-vh-100 text-white" style="background-color:#0c59db; overflow:hidden;">
+  <!-- Abstract Background Shapes -->
+  <svg class="position-absolute w-100 h-100" style="opacity:0.12; z-index:0;" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <circle cx="20%" cy="30%" r="280" fill="white" />
+    <circle cx="80%" cy="70%" r="220" fill="white" />
+    <path d="M0 400 Q300 200 600 400 T1200 400 V800 H0 Z" fill="white" opacity="0.4"/>
+  </svg>
+
+  <div class="container position-relative z-1">
+    <div class="row align-items-center">
+      
+      <!-- Left Side: Text -->
+      <div class="col-md-6 mb-5 mb-md-0">
+        <h1 class="display-4 fw-bold mb-4">
+          Our <span style="color:#ffe600;">Services</span>
+        </h1>
+        <p class="lead mb-4 text-light">
+          We deliver innovative IT and business solutions that help organizations 
+          thrive in the digital era. From custom software to cloud integration, 
+          we’ve got you covered.
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#contact" class="btn btn-lg fw-semibold px-4 py-2 shadow" style="background-color:#ffe600; color:#0c59db; border-radius:1rem;">
+            Get a Quote
+          </a>
+          <a href="#services-list" class="btn btn-lg fw-semibold px-4 py-2" style="border:2px solid #ffe600; color:#ffe600; border-radius:1rem; background:transparent;">
+            Explore Services
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Side: Illustration -->
+      <div class="col-md-6 text-center">
+        <img src="service_no_bg.png " 
+     alt="Our Services Illustration" 
+     class="img-fluid floating-img" style="max-width:420px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="ui.jpg" alt="" width="500px" height="400px">
+            </div>
+            <div class="col-12 col-md-6">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore in adipisci sed dolor nihil, molestias explicabo magni cumque corrupti eveniet nisi inventore sunt dolores dolorum deleniti pariatur officia, quos maxime?
+                Explicabo ratione at totam autem delectus vero necessitatibus quo deleniti accusantium, quas suscipit ducimus consequuntur dicta. Repellat doloribus ipsum sequi accusantium. Nemo facere provident cupiditate vero excepturi culpa natus praesentium.
+        </div>
+    </div>
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
